@@ -1,29 +1,175 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Gaming</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO GLYPH · gaming portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <!-- ===== HEADER ===== -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>NEO GLYPH</span>
+            </div>
+            
+            <!-- Toggle Button -->
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun"></i>
+                <span>Light Mode</span>
+            </button>
+        </header>
 
-<header>
-  <h1>Farhan.dev</h1>
-  <button id="toggleTheme">Toggle Mode</button>
-</header>
+        <!-- ===== MAIN CONTENT ===== -->
+        <main>
+            <!-- Profile Section -->
+            <section class="profile">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gamer&backgroundColor=ffdfbf&clothing=hoodie&clothingColor=6bd1&eyebrow=up&eyes=wink&mouth=smile&top=shortHair" 
+                         alt="avatar" 
+                         class="avatar">
+                    <div class="online-badge">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h1>Rafael <span class="glow-text">"R4ZE"</span> Kusuma</h1>
+                    <div class="tags">
+                        <span class="tag"><i class="fas fa-trophy"></i> Pro Player</span>
+                        <span class="tag"><i class="fas fa-code"></i> Game Dev</span>
+                        <span class="tag"><i class="fas fa-stream"></i> Streamer</span>
+                    </div>
+                    <p class="bio">
+                        <i class="fas fa-quote-left"></i>
+                        Born to play, forced to work. 10+ years fragging in Valorant & CS2. 
+                        Now building gaming experiences from code.
+                    </p>
+                </div>
+            </section>
 
-<section class="hero">
-  <h2>Welcome to My Gaming Portfolio</h2>
-  <p>Web Developer • Gamer • Creator</p>
-</section>
+            <!-- Stats Cards -->
+            <section class="stats">
+                <div class="stat-card">
+                    <i class="fas fa-skull"></i>
+                    <div>
+                        <h3>15.2K</h3>
+                        <p>Eliminations</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-crown"></i>
+                    <div>
+                        <h3>47</h3>
+                        <p>Tournaments</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3>128K</h3>
+                        <p>Followers</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-gamepad"></i>
+                    <div>
+                        <h3>6</h3>
+                        <p>Games Built</p>
+                    </div>
+                </div>
+            </section>
 
-<section class="projects">
-  <div class="card">Project 1</div>
-  <div class="card">Project 2</div>
-  <div class="card">Project 3</div>
-</section>
+            <!-- Skills / Games -->
+            <section class="skills">
+                <h2><i class="fas fa-joystick"></i> Main Games</h2>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VALORANT</span>
+                            <span>Immortal 3</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CS2</span>
+                            <span>Faceit Lv.10</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Apex Legends</span>
+                            <span>Predator</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Unity / C#</span>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<script src="script.js"></script>
+            <!-- Gallery / Recent Matches -->
+            <section class="gallery">
+                <h2><i class="fas fa-images"></i> Recent Highlights</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&h=300&fit=crop&auto=format" alt="gaming setup">
+                        <div class="gallery-overlay">
+                            <span>ACE • VALORANT</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=500&h=300&fit=crop&auto=format" alt="tournament">
+                        <div class="gallery-overlay">
+                            <span>CHAMPIONS 2024</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=500&h=300&fit=crop&auto=format" alt="stream setup">
+                        <div class="gallery-overlay">
+                            <span>STREAM ROOM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Links -->
+            <section class="socials">
+                <a href="#" class="social-btn discord"><i class="fab fa-discord"></i> raze.gg</a>
+                <a href="#" class="social-btn twitch"><i class="fab fa-twitch"></i> R4ZE_TV</a>
+                <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i> R4ZE Plays</a>
+                <a href="#" class="social-btn steam"><i class="fab fa-steam"></i> R4ZE</a>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
