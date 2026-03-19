@@ -1,0 +1,52 @@
+:root {
+  --bg: #0f172a;
+  --text: #ffffff;
+  --accent: #22c55e;
+  --card: #1e293b;
+}
+
+body.light {
+  --bg: #f1f5f9;
+  --text: #0f172a;
+  --card: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: var(--card);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
